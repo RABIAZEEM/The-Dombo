@@ -1,0 +1,38 @@
+.bodyFooter{
+    display:flex;
+    height: 25%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.textFoot1{
+    color: white;
+    font-size: 1.5em;
+}
+.textFoot2{
+    color: #605975;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.footBtn{
+    width: 10em;
+    height: 2em;
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+@media (max-width: 500px){
+    .bodyFooter{
+        display: none;
+    }
+}
+
+
+
+
+
+
+

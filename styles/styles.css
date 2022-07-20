@@ -1,0 +1,165 @@
+@import "encabezado.css";
+@import "piePagina.css";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:#010021
+}
+.allContent{
+    margin-left: 8%;
+    margin-right: 2%;
+}
+.mainLine{
+    display:flex;
+}
+.mainSectionA{
+    display:flex;
+    flex-direction:column;
+    width: 25%;
+    margin-top: 5%;
+}
+.text1{
+    color:white;
+    font-size: 4vw;
+}
+.text2{
+    font-size: 1.5vw;
+    color:#605975;
+}
+.SectionABtn{
+    width: 10em;
+    height: 2.5em;
+    background-color: #00F582;
+    border-color: #00F582;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.mainSectionB{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    z-index: 1;
+}
+.mainImage{
+    z-index: 1;
+    filter: drop-shadow(50% 50% 100% white);
+}
+.layersBtns{
+    position: relative;
+    z-index: 2;
+}
+.layerBtnsMobile{
+    display: none;
+}
+.buttn {
+    position: absolute;
+    width: 15.5%;
+    height: 22%;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    opacity: 0;
+    z-index: 2;
+}
+.buttnGran {
+    position: absolute;
+    width: 22%;
+    height: 30%;
+    border-radius: 51%;
+    border: none;
+    background: black;
+    opacity: 0;
+    z-index: 2;
+}
+#btn1 {
+    top: 6%;
+    left: 2%
+}
+#btn2 {
+    top:28.5%;
+    left: 9.5%
+}
+#btn3 {
+    top: 6%;
+    left: 82%
+}
+#btn4 {
+    top:28.5%;
+    left: 74%
+}
+#btn5 {
+    top: 15.5%;
+    left: 27%
+}
+#btn6 {
+    top: 15.5%;
+    left: 50.5%
+}
+#btn7 {
+    top: 53%;
+    left: 15%;
+}
+#btn8 {
+    top: 53%;
+    left: 63%;
+}
+.allContent_Page1Mobile{
+    display: none;
+}
+@media (max-width: 500px){
+    body{
+        background-color:#010021
+    }
+    .layersBtns{
+        display:none;
+    }
+    .layerBtnsMobile{
+        display: block;
+    }
+    .text1{
+        color:white;
+        font-size: 25px;
+    }
+    .text2{
+        font-size: 12px;
+        color:#605975;
+    }
+    .mainLine{
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mainSectionA{
+        width: 100%;
+        margin-left: 20%;
+        align-items: right;
+    }
+    .mainSectionB{
+        width: 100%;
+    }
+    .allContent_Page1Mobile{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        display: none;
+    }
+    .bttnSonidoMobile{
+        margin-top: 5%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .hitSound{
+        width: 375px;
+        height: 325px;
+        border-radius: 75%;
+        background-color: rgb(35, 34, 34);
+        border: none;
+        font-size: larger;
+    }
+}

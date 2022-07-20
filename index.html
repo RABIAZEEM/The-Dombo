@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit the Dombo</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <main class="allContent">
+        <nav class="Encabezado">
+            <div class="boton-bur">
+                <button class="propBotBur">Menu</button>
+            </div>
+            <img class="logo" src="./images/logo.png" alt="logo bombo">
+            <div class="Opciones">
+                <a href="">Premium</a>
+                <a href="">Help</a>
+                <a href="">Download</a>
+                <a href="">Sig Up</a>
+                <a href="">Log In</a>
+            </div>
+        </nav>
+        <nav class="mainLine">
+                <div class="mainSectionA">
+                    <h1 class="text1">Music for Everyone.</h1>
+                    <p class="text2">Millions of songs no cards needed.</p>
+                    <button class="SectionABtn"> Hit  the sound</button></li>
+                </div>
+                <div class="mainSectionB">
+                    <div class="layerBtns">
+                        <button class="buttn" id="btn1" onclick="playAudio('audio1')"></button>
+                        <audio id="audio1" src="./sounds/bombo.wav"></audio>
+                        <button class="buttn" id="btn2" onclick="playAudio('audio2')"></button>
+                        <audio id="audio2" src="./sounds/crash.wav"></audio>
+                        <button class="buttn" id="btn3" onclick="playAudio('audio3')"></button>
+                        <audio id="audio3" src="./sounds/hit-hat.wav"></audio>
+                        <button class="buttn" id="btn4" onclick="playAudio('audio4')"></button>
+                        <audio id="audio4" src="./sounds/redoblante.wav"></audio>
+                        <button class="buttnGran" id="btn5" onclick="playAudio('audio5')"></button>
+                        <audio id="audio5" src="./sounds/tom1.wav"></audio>
+                        <button class="buttnGran" id="btn6" onclick="playAudio('audio6')"></button>
+                        <audio id="audio6" src="./sounds/tom2.wav"></audio>
+                        <button class="buttnGran" id="btn7" onclick="playAudio('audio7')"></button>
+                        <audio id="audio7" src="./sounds/tom3.wav"></audio>
+                        <button class="buttnGran" id="btn8" onclick="playAudio('audio8')"></button>
+                        <audio id="audio8" src="./sounds/tom4.wav"></audio>
+                    </div>
+                    <div class="layerBtnsMobile">
+                        <button class="buttn" id="btn1" onclick="ocultaMuestra('mainSectionB','allContent_Page1Mobile')"></button>
+                        <button class="buttn" id="btn2" onclick="playAudio('audio2')"></button>
+                        <button class="buttn" id="btn3" onclick="playAudio('audio3')"></button>
+                        <button class="buttn" id="btn4" onclick="playAudio('audio4')"></button>
+                        <button class="buttnGran" id="btn5" onclick="playAudio('audio5')"></button>
+                        <button class="buttnGran" id="btn6" onclick="playAudio('audio6')"></button>
+                        <button class="buttnGran" id="btn7" onclick="playAudio('audio7')"></button>
+                        <button class="buttnGran" id="btn8" onclick="playAudio('audio8')"></button>
+                    </div>
+                    <img src="./images/drumkit.png" alt="Imagen de un drumkit" class="mainImage">
+                </div>
+        </nav>
+        <div class="allContent_Page1Mobile">
+            <div class="bttnSonidoMobile">
+                <button class="hitSound">Hit</button>
+                <button class="buttn" id="btn1" onclick="playAudio('audio1')"></button>
+                <audio id="audio1" src="./sounds/bombo.wav"></audio>
+            </div>
+        </div>
+        <footer class="bodyFooter">
+            <a class="textFoot1">Try Premium free for 1 month</a>
+            <a class="textFoot2">Play millions of songs ad-free, on-demand and offline.</a>
+            <button class="footBtn"> See pricing</button></li>
+        </footer>
+    </main>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
